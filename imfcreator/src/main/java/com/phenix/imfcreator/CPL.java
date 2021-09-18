@@ -2,6 +2,7 @@ package com.phenix.imfcreator;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.UUID;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
@@ -14,7 +15,7 @@ import org.w3c.dom.Element;
  */
 public class CPL {
 
-  public CPL(File fichier_xml, ArrayList<String> liste_fichier_image, ArrayList<String> liste_fichier_audio) throws TransformerConfigurationException, TransformerException, ParserConfigurationException {
+  public CPL(File fichier_xml, ArrayList<Image> liste_fichier_image, ArrayList<Audio> liste_fichier_audio, UUID uuid) throws TransformerConfigurationException, TransformerException, ParserConfigurationException {
 
     Document document = IMF.genererDocumentXML(new GenererXML() {
       @Override

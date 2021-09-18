@@ -1,6 +1,7 @@
 package com.phenix.imfcreator;
 
 import java.io.File;
+import java.util.UUID;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import org.w3c.dom.Document;
@@ -12,7 +13,7 @@ import org.w3c.dom.Element;
  */
 public class OPL {
 
-  public OPL(File fichier_xml) throws ParserConfigurationException, TransformerException {
+  public OPL(File fichier_xml, UUID uuid) throws ParserConfigurationException, TransformerException {
     Document document = IMF.genererDocumentXML(new GenererXML() {
       @Override
       public void genererXML(Document document) {

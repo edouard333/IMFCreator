@@ -10,10 +10,13 @@ import java.util.ArrayList;
 public class Main {
 
   public static void main(String[] args) {
-    ArrayList<String> liste_fichier_image = new ArrayList<String>();
-    ArrayList<String> liste_fichier_audio = new ArrayList<String>();
+    ArrayList<Image> liste_fichier_image = new ArrayList<Image>();
+    ArrayList<Audio> liste_fichier_audio = new ArrayList<Audio>();
 
-    IMF imf = new IMF(new File("/Users/mp-dailies/Desktop/genereIMF/"), "package_name", liste_fichier_image, liste_fichier_audio);
+    String pc= "C:\\Users\\Edouard\\Desktop\\Nouveau dossier";
+    String mac= "/Users/mp-dailies/Desktop/genereIMF/";
+    
+    IMF imf = new IMF(new File(pc), "package_name", liste_fichier_image, liste_fichier_audio);
 
   }
 }
