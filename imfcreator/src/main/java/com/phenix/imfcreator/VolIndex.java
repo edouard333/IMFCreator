@@ -17,10 +17,11 @@ public class VolIndex {
       @Override
       public void genererXML(Document document) {
         // création de l'Element racine
-        Element racine = document.createElement("fichier");
-        document.appendChild(racine);
+        Element volume_index = document.createElement("VolumeIndex");
+        volume_index.setAttribute("xmlns", "http://www.smpte-ra.org/schemas/429-9/2007/AM");
+        document.appendChild(volume_index);
 
-        Element documents = document.createElement("document");
+        volume_index.appendChild(IMF.addChild(document, "Index", "1"));
       }
     });
 

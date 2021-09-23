@@ -1,6 +1,7 @@
 package com.phenix.imfcreator;
 
 import java.io.File;
+import java.util.UUID;
 
 /**
  *
@@ -8,11 +9,27 @@ import java.io.File;
  */
 public class Media {
 
-    public File fichier;
+  public File fichier;
 
-    public int in_media;
+  public int duree;
 
-    public int out_media;
+  /**
+   * "48000 1" ou "24 1" par exemple.
+   */
+  public String edit_rate;
 
-    public int in_timeline;
+  public int in_media;
+
+  public int out_media;
+
+  public int in_timeline;
+
+  public int duree_cpl;
+
+  public UUID uuid;
+
+  /**
+   * Hash en Base 64 avec SHA1.
+   */
+  public String hash;
 }

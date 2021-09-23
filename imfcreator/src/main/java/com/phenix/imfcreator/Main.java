@@ -13,10 +13,10 @@ public class Main {
     ArrayList<Image> liste_fichier_image = new ArrayList<Image>();
     ArrayList<Audio> liste_fichier_audio = new ArrayList<Audio>();
 
-    String pc= "C:\\Users\\Edouard\\Desktop\\Nouveau dossier";
-    String mac= "/Users/mp-dailies/Desktop/genereIMF/";
-    
-    IMF imf = new IMF(new File(pc), "package_name", liste_fichier_image, liste_fichier_audio);
+    String pc = "C:\\Users\\Edouard\\Desktop\\Nouveau dossier";
+    String mac = "/Users/mp-dailies/Desktop/genereIMF/";
+
+    IMF imf = new IMF(new File(mac), "package_name", IMF.EPISODE, liste_fichier_image, liste_fichier_audio);
 
   }
 }
